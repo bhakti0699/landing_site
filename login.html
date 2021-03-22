@@ -92,7 +92,7 @@
             var regex=/^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
             if(!regex.test(email))
             {
-                $("error").text("Please Enter Valid Email address");
+                $("#error").text("Please Enter Valid Email address");
                 $("#error").css("display","block").fadeIn();
                 $("#login").prop('disabled',true);
             }
@@ -107,7 +107,7 @@
             var regex=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
             if(!regex.test(pass))
             {
-                $("error").text("Password field that must contain 8 or more characters");
+                $("#error").text("Password field that must contain 8 or more characters");
                 $("#error").css("display","block").fadeIn();
                 $("#login").prop('disabled',true);
             }
