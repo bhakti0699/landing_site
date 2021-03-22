@@ -93,10 +93,11 @@
             var regex=/^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
             if(!regex.test(email))
             {
-                $("#error").css("display","block");
+                $("#error").css("display","block").fadeIn();
                 $("#login").prop('disabled',true);
             }
             else{
+                $("#error").css("display","none").fadeOut();
                 $("#login").prop('disabled',false);
             }
         })
