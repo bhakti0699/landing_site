@@ -40,21 +40,21 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <label class="input_labels">Firstname</label>
-                                    <input type="text" class="firstname_input" placeholder="Helen">
+                                    <input type="text" class="firstname_input" placeholder="Helen" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label class="input_labels">Lastname</label>
-                                    <input type="text" class="lastname_input" placeholder="Garner">
+                                    <input type="text" class="lastname_input" placeholder="Garner" required>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group m-1">
                             <label class="input_labels">Email or Username</label>
-                            <input type="email" class="email_input pb-1" placeholder="helen@rayft.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" oninvalid="this.setCustomValidity('Please Enter Valid Email address');" oninput="this.setCustomValidity('');">
+                            <input type="email" class="email_input pb-1" placeholder="helen@rayft.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" oninvalid="this.setCustomValidity('Please Enter Valid Email address');" oninput="this.setCustomValidity('');" required>
                         </div>
                         <div class="form-group m-1">
                             <label class="input_labels">Password</label>
-                            <input type="password" class="password_input pb-1" value="hello123" id="password" pattern=".{8,}" oninvalid="this.setCustomValidity('Password field that must contain 8 or more characters');" oninput="this.setCustomValidity('');">
+                            <input type="password" class="password_input pb-1" value="hello123" id="password" pattern=".{8,}" oninvalid="this.setCustomValidity('Password field that must contain 8 or more characters');" oninput="this.setCustomValidity('');" required>
                             <i toggle="password" id="icon" class="fa fa-eye" style="position: absolute;left:auto;margin:5px 1px 4px -20px;"></i>
                         </div>
                         <div class="form-group m-1">
