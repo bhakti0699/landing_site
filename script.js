@@ -37,7 +37,9 @@ function validateInput()
         }
     }
 
-    if(email.value && password.value)
+    if(password.value.length > 8)
+    {
+        if(email.value && password.value)
     {
         if(email.value=="bhakti@gmail.com" && password.value=="bhakti123")
         {   
@@ -57,6 +59,7 @@ function validateInput()
             swal("Oops.....", "You have entered an invalid email or password", "error");
             return false;
         }
+    }
     }
 }
 document.querySelector("button")
